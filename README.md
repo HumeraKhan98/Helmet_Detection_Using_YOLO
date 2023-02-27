@@ -1,15 +1,16 @@
 # Helmet_Detection_Using_YOLO
 
-1. download weights and config file from kaggle:
+1. Download weights and config file from kaggle:
 https://www.kaggle.com/datasets/savanagrawal/helmet-detection-yolov3
+<pre>
+2. Generate h5 file using model.py 
+edit the file to add the path to the weights file in WeightReader (line 155)
+</pre>
+3. Use any mp4 video file
 
-2. generate h5 file using model.py (edit the file to add the path to the weights file in WeightReader)
+4. Edit detect.py file to add the paths to weights file (line 11), config file (line 11), model.h5 file (line 15) and the mp4 video file (line 18)
 
-3. use any mp4 video file
-
-4. edit detect.py file to add the paths to weights file, config file, model.h5 file and the mp4 video file
-
-5. To run the code in google colab, edit detect.py to use cv2_imshow(img), else cv2.imshow("Image", img) can be used
+5. To run the code in google colab, edit detect.py to use cv2_imshow(img) (line 101), else cv2.imshow("Image", img) can be used
 <pre>
 from google.colab.patches import cv2_imshow
 </pre>
