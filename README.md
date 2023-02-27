@@ -10,4 +10,6 @@ https://www.kaggle.com/datasets/savanagrawal/helmet-detection-yolov3
 4. edit detect.py file to add the paths to weights file, config file, model.h5 file and the mp4 video file
 
 5. To run the code in google colab, edit detect.py to use cv2_imshow(img), else cv2.imshow("Image", img) can be used
+<pre>
 from google.colab.patches import cv2_imshow
+</pre>
